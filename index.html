@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Preloader with WhatsApp Redirect</title>
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             display: flex;
@@ -28,20 +30,24 @@
         }
     </style>
 </head>
+
 <body>
     <div id="video-container">
         <!-- Video Element -->
         <video id="introVideo" autoplay muted>
-            <source src="./video/InShot_20241008_234934257.mp4" type="video/mp4">
+            <source
+                src="https://res.cloudinary.com/dlga3sd7j/video/upload/v1728480317/InShot_20241008_234934257_jxwgmb.mp4"
+                type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <script>
         // Redirect to WhatsApp after 4 seconds
-        setTimeout(function() {
+        setTimeout(function () {
             window.location.href = "https://chat.whatsapp.com/KFjJ6MvjphgH2cSrHoM1QW"; // Replace with your WhatsApp link
         }, 4000); // 4000 milliseconds = 4 seconds
     </script>
 </body>
+
 </html>
